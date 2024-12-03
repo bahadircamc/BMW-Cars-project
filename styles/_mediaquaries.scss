@@ -1,0 +1,14 @@
+// Normalde media etiketleri ile farkli ekran boyutlarinda su eleman bu sriller gecerli olsun deriz.
+//scss de ise bu yapiyi ekran boyutlari bular kisminda gel istenilen yapiyi yaz diyoruz.
+//bunu demek icin belirtlen ekrna oyutu altinda @content dememiz gerekir.
+
+@mixin mobile{
+    @media (max-width: 800px){
+        @content;
+    }
+}
+@mixin laptop{
+    @media (min-width: 800px) and (max-width: 1400px){
+        @content;
+    }
+}

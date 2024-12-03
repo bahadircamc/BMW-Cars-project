@@ -1,0 +1,14 @@
+
+@import "./modules";
+#interior {
+    @extend %design;
+    background-image: radial-gradient(rgba(0,0,0,0.5),black),url("../images/bmw-banner.jpeg");
+    //! ./mevcut dizini temsilederken  ../ bir ust dizini temsil eder.
+    //! radial gradient dairenin ortasindan disariya dogru kendisine verdigimiz renk gecisi saglar.bu gecis merkezden disariya dogru gerceklesir.
+    p{
+        font-size: 20px;
+        @include mobile{
+            font-size: 15px;
+        }
+    }
+}
